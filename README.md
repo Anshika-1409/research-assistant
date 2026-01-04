@@ -44,6 +44,12 @@ research-assistant/
 ├── src/main/resources
 │ └── application.properties
 │
+├── chrome-extension/          
+│   ├── manifest.json
+│   ├── sidepanel.html
+│   ├── sidepanel.js
+│   ├── sidepanel.css
+│   └── icons/
 ├── pom.xml
 └── README.md
 
