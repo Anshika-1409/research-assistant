@@ -61,7 +61,7 @@ public class ResearchService {
 
         switch (request.getOperation()) {
             case "summarize":
-                prefix = "Summarize the following content:\n";
+                prefix = "Summarize the following content into few sentences:\n";
                 break;
             case "analyze":
                 prefix = "Analyze the following content:\n";
