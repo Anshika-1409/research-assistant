@@ -1,0 +1,22 @@
+package com.research.assistant;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+import lombok.RequiredArgsConstructor;
+
+@RestController
+@RequestMapping("/api/research")
+@CrossOrigin(origins = "*")
+@RequiredArgsConstructor   // ⭐ THIS WAS MISSING
+public class ResearchController {
+
+    private final ResearchService researchService;
+
+    @PostMapping("/process")
+    public ResponseEntity<String> processContent(
+            @RequestBody ResearchRequest request) {
+
+        String result = researchService.processContent(request);
+        return ResponseEntity.ok(result);
+    }
+}
