@@ -7,7 +7,7 @@ import lombok.RequiredArgsConstructor;
 @RestController
 @RequestMapping("/api/research")
 @CrossOrigin(origins = "*")
-@RequiredArgsConstructor   // ⭐ THIS WAS MISSING
+@RequiredArgsConstructor   
 public class ResearchController {
 
     private final ResearchService researchService;
