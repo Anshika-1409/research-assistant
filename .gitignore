@@ -35,7 +35,7 @@ target/
 node_modules/
 .env
 *.log
+logs/
 .idea/
 .vscode/
 .DS_Store
-
